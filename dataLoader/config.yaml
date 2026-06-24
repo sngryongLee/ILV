@@ -1,0 +1,43 @@
+dataset:
+  spacing: [1.95, 1.95, 1.95] # [x, y, z], mm
+  value_range: [-1000, 1000] # [min, max], HU scale
+  resolution: [256, 256, 256] # [x, y, z]
+
+
+projector:
+  n_projections: 50
+
+  # system configuration
+  DSD: 1200 # distance source detector (mm)
+  DSO: 800  # distance source origin   (mm)
+
+  # detector parameters
+  nDetector: [512, 512] # number of pixels (px)
+  dDetector: [1.95, 1.95] # size of each pixel (mm)
+
+  # image parameters
+  nVoxel: [256, 256, 256] # number of voxels (vx) [x, y, z]
+  dVoxel: [1.95, 1.95, 1.95] # size of each voxel (mm)
+
+  # offsets
+  offOrigin: [0, 0, 0] # offset of image from origin (mm) [x, y, z]
+  offDetector: [0, 0] # offset of detector (only in two direction) (mm) [u, v]
+
+  # Auxiliary
+  accuracy: 0.5 # accuracy of FWD proj (vx/sample)
+
+  # Mode
+  mode: cone # x-ray source mode parallel/cone
+  filter: null
+
+  # Angles
+  total_angle: 360 # total angle (degree)
+  start_angle: 0   # start angle (degree)
+
+
+  # Noise
+  noise: False
+  possion_noise: 10000  # lambda for possion
+  gaussian_noise: # mean and std for gaussian
+  - 0 # mean
+  - 10 # std

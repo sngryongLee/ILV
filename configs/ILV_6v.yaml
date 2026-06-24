@@ -1,0 +1,71 @@
+gpu_id: [0, 1, 2, 3, 4, 5, 6, 7]
+exp_name: ILV/6v
+n_views: 6
+data_root:  'xxxxx'
+split_json: 'dataLoader/split.json'
+projector_cfg_path: 'dataLoader/config.yaml'
+finetune: False
+
+model:
+    opacity_shift: 0
+    scale_shift: 6
+    encoder_backbone: 'vit_base_patch16_224.dino' 
+    n_groups: [16]          # n_groups for local attention
+    n_offset_groups: 64     # offset radius of 1/n_offset_groups of the scene size
+    K: 1                    # primitives per-voxel
+    num_layers: 18
+    num_heads: 16
+    view_embed_dim: 32
+    embedding_dim: 256
+    vol_feat_reso: 32
+    vol_embedding_reso: 32
+    patch_size: 16 
+    dim: 768 
+    vol_embedding_out_dim: 60
+    ckpt_path:               # specify a ckpt path if you want to continue training  
+
+train_dataset:
+    dataset_name: CTRecon
+    data_root: ${data_root}
+    split_json: ${split_json}
+    projector_cfg_path: ${projector_cfg_path}
+    split: train
+    img_size: [512,512] 
+    n_group: ${n_views}  
+    n_scenes: 
+    
+test_dataset:
+    dataset_name: CTRecon
+    data_root: ${data_root}
+    split_json: ${split_json}
+    projector_cfg_path: ${projector_cfg_path}
+    split: test
+    img_size: [512,512]
+    n_group: ${n_views}
+    n_scenes: 
+
+loss:
+    lambda_color: 0.25
+    lambda_ssim: 0.5
+    lambda_vol: 2
+    lambda_refine_vol: 2
+
+train:
+    batch_size: 1
+    accumulate_grad_batches: 1
+    lr: 1e-4
+    beta1: 0.9
+    beta2: 0.95
+    weight_decay: 0.05
+    warmup_iters: 1000
+    n_epoch: 50
+    limit_train_batches: 1.0
+    limit_val_batches: 1.0
+    check_val_every_n_epoch: 1
+    start_fine: 5000
+    
+test:
+    batch_size: 1
+logger: 
+    name: wandb
+    dir: logs/${exp_name}

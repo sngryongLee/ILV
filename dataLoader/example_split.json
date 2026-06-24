@@ -1,0 +1,29 @@
+{
+  "train": [],
+  "test": [
+    {
+      "name": "amos_5387",
+      "path": "amos/amos_5387"
+    },
+    {
+      "name": "1061_48417",
+      "path": "rsna2023/1061_48417"
+    },
+    {
+      "name": "RibFrac47-image",
+      "path": "ribfrac/RibFrac47-image"
+    },
+    {
+      "name": "BDMAP_00000465",
+      "path": "atlas/BDMAP_00000465"
+    },
+    {
+      "name": "BDMAP_00001874",
+      "path": "atlas/BDMAP_00001874"
+    },
+    {
+      "name": "BDMAP_00001354",
+      "path": "atlas/BDMAP_00001354"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+n_views: 10
+novel_views: 40
+with_fine: True
+save_slice: True
+save_proj: False
+save_volume: False
+
+infer:
+    dataset:
+        dataset_name: CTRecon
+        split: test
+        img_size: [512,512]
+        data_root:  'xxxxx'
+        split_json: 'dataLoader/split.json'
+        projector_cfg_path: 'dataLoader/config.yaml'
+        n_group: ${n_views}
+        n_scenes:
+        num_workers: 0
+        batch_size: 1
+
+    ckpt_path: ./checkpoints/10v.pth
+    eval_novel_view_only: True
+    metric_path: None
+    save_folder: outputs/images/10v

@@ -1,0 +1,144 @@
+{
+    "test": [
+        {
+            "name": "PAT001",
+            "path": "fumpe/PAT001"
+        },
+        {
+            "name": "PAT002",
+            "path": "fumpe/PAT002"
+        },
+        {
+            "name": "PAT003",
+            "path": "fumpe/PAT003"
+        },
+        {
+            "name": "PAT004",
+            "path": "fumpe/PAT004"
+        },
+        {
+            "name": "PAT005",
+            "path": "fumpe/PAT005"
+        },
+        {
+            "name": "PAT006",
+            "path": "fumpe/PAT006"
+        },
+        {
+            "name": "PAT007",
+            "path": "fumpe/PAT007"
+        },
+        {
+            "name": "PAT008",
+            "path": "fumpe/PAT008"
+        },
+        {
+            "name": "PAT009",
+            "path": "fumpe/PAT009"
+        },
+        {
+            "name": "PAT010",
+            "path": "fumpe/PAT010"
+        },
+        {
+            "name": "PAT011",
+            "path": "fumpe/PAT011"
+        },
+        {
+            "name": "PAT012",
+            "path": "fumpe/PAT012"
+        },
+        {
+            "name": "PAT013",
+            "path": "fumpe/PAT013"
+        },
+        {
+            "name": "PAT014",
+            "path": "fumpe/PAT014"
+        },
+        {
+            "name": "PAT015",
+            "path": "fumpe/PAT015"
+        },
+        {
+            "name": "PAT016",
+            "path": "fumpe/PAT016"
+        },
+        {
+            "name": "PAT017",
+            "path": "fumpe/PAT017"
+        },
+        {
+            "name": "PAT018",
+            "path": "fumpe/PAT018"
+        },
+        {
+            "name": "PAT019",
+            "path": "fumpe/PAT019"
+        },
+        {
+            "name": "PAT020",
+            "path": "fumpe/PAT020"
+        },
+        {
+            "name": "PAT021",
+            "path": "fumpe/PAT021"
+        },
+        {
+            "name": "PAT022",
+            "path": "fumpe/PAT022"
+        },
+        {
+            "name": "PAT023",
+            "path": "fumpe/PAT023"
+        },
+        {
+            "name": "PAT024",
+            "path": "fumpe/PAT024"
+        },
+        {
+            "name": "PAT025",
+            "path": "fumpe/PAT025"
+        },
+        {
+            "name": "PAT026",
+            "path": "fumpe/PAT026"
+        },
+        {
+            "name": "PAT027",
+            "path": "fumpe/PAT027"
+        },
+        {
+            "name": "PAT028",
+            "path": "fumpe/PAT028"
+        },
+        {
+            "name": "PAT029",
+            "path": "fumpe/PAT029"
+        },
+        {
+            "name": "PAT030",
+            "path": "fumpe/PAT030"
+        },
+        {
+            "name": "PAT031",
+            "path": "fumpe/PAT031"
+        },
+        {
+            "name": "PAT032",
+            "path": "fumpe/PAT032"
+        },
+        {
+            "name": "PAT033",
+            "path": "fumpe/PAT033"
+        },
+        {
+            "name": "PAT034",
+            "path": "fumpe/PAT034"
+        },
+        {
+            "name": "PAT035",
+            "path": "fumpe/PAT035"
+        }
+    ]
+}
