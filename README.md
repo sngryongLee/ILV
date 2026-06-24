@@ -143,7 +143,7 @@ configs/ILV_10v_small.yaml
 
 ## Acknowledgement
 
-This project uses a CUDA rasterization/voxelization extension adapted from the CUDA rasterizer in [ruyi-zha/r2_gaussian](https://github.com/ruyi-zha/r2_gaussian).
+This project uses a CUDA rasterization/voxelization extension adapted from the CUDA rasterizer in [R<sup>2</sup>-Gaussian](https://github.com/ruyi-zha/r2_gaussian).
 
 ## Citation
 
